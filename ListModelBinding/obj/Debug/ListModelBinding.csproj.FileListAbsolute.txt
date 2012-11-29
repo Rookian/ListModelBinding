@@ -22,3 +22,27 @@ C:\Users\Alex\Documents\Visual Studio 2012\Projects\MvcApplication4\ListModelBin
 C:\Users\Alex\Documents\Visual Studio 2012\Projects\MvcApplication4\ListModelBinding\obj\Debug\ListModelBinding.dll
 C:\Users\Alex\Documents\Visual Studio 2012\Projects\MvcApplication4\ListModelBinding\obj\Debug\ListModelBinding.pdb
 C:\Users\Alex\Documents\Visual Studio 2012\Projects\MvcApplication4\ListModelBinding\bin\Microsoft.Web.Mvc.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\ListModelBinding.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\ListModelBinding.pdb
+C:\Development\ListModelBinding\ListModelBinding\bin\EntityFramework.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\Microsoft.Web.Mvc.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\MvcContrib.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Net.Http.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Web.Http.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Web.Http.WebHost.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Web.Mvc.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Web.Optimization.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Web.WebPages.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Web.WebPages.Razor.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Net.Http.Formatting.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\EntityFramework.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Net.Http.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Web.Http.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Web.Http.WebHost.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Web.Mvc.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Web.WebPages.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Web.WebPages.Razor.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\System.Net.Http.Formatting.xml
+C:\Development\ListModelBinding\ListModelBinding\obj\Debug\ListModelBinding.csprojResolveAssemblyReference.cache
+C:\Development\ListModelBinding\ListModelBinding\obj\Debug\ListModelBinding.dll
+C:\Development\ListModelBinding\ListModelBinding\obj\Debug\ListModelBinding.pdb

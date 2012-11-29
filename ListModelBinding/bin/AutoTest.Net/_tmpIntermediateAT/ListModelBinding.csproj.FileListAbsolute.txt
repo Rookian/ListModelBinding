@@ -26,3 +26,31 @@ C:\Users\Alex\Documents\Visual Studio 2012\Projects\MvcApplication4\ListModelBin
 C:\Users\Alex\Documents\Visual Studio 2012\Projects\MvcApplication4\ListModelBinding\bin\AutoTest.Net\ListModelBinding.pdb
 C:\Users\Alex\Documents\Visual Studio 2012\Projects\MvcApplication4\ListModelBinding\bin\AutoTest.Net\Microsoft.Web.Mvc.dll
 C:\Users\Alex\Documents\Visual Studio 2012\Projects\MvcApplication4\ListModelBinding\bin\AutoTest.Net\MvcContrib.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\_tmpIntermediateAT\ListModelBinding.csprojResolveAssemblyReference.cache
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\_tmpIntermediateAT\ListModelBinding.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\_tmpIntermediateAT\ListModelBinding.pdb
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\ListModelBinding.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\ListModelBinding.pdb
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\EntityFramework.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\Microsoft.Web.Mvc.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\MvcContrib.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Net.Http.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.Http.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.Http.WebHost.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.Mvc.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.Optimization.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.WebPages.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.WebPages.Razor.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Net.Http.Formatting.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\Newtonsoft.Json.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\WebGrease.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\Antlr3.Runtime.dll
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\EntityFramework.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Net.Http.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.Http.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.Http.WebHost.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.Mvc.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.WebPages.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.WebPages.Razor.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Net.Http.Formatting.xml
+C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\Newtonsoft.Json.xml

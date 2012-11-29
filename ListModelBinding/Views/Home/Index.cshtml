@@ -1,5 +1,6 @@
-﻿@model ListModelBinding.Models.ViewModel
+﻿@model ViewModel
 @using ListModelBinding
+@using ListModelBinding.Models
 @using MvcContrib.UI.Grid
 
 @{
@@ -24,19 +25,43 @@
 }
 @using (Html.BeginForm("PostData", "Home", FormMethod.Post))
 {
-    @(Html.Grid(Model.Items).Columns(c =>
+    @(Html.Grid(Model.Items)
+    .RenderUsing(new PostAsListRenderer<ItemModel>("list"))
+    .Columns(c =>
     {
         c.Custom(
             @<text>
-                @Html.UseListBinder().CreateListIndex(item.Id)
-                @item.Id
+                 @Html.Hidden(Reflector.GetPropertyName(x => item.Id), item.Id)
+                 @item.Id
              </text>
         ).Named("Id");
-        c.For(x => Html.UseListBinder().TextBoxFor(y => x.Name, x.Id)).Named("Name");
-        c.For(x => Html.UseListBinder().TextBoxFor(y => x.Description, x.Id)).Named("Description");
-        c.For(x => Html.UseListBinder().DropDownListFor(y => x.SelectedItem, x.Id, Model.SelectListItems)).Named("DropDown");
-      }))
+        c.For(x => Html.TextBox(Reflector.GetPropertyName(y => x.Single.Name), x.Name)).Named("Name");
+        c.For(x => Html.TextBox(Reflector.GetPropertyName(y => x.Description), x.Description)).Named("Description");
+        c.For(x => Html.DropDownList(Reflector.GetPropertyName(y => x.SelectedItem), Model.SelectListItems)).Named("DropDown");
+    }))
     
     <input type="submit" value="submit" />
 }
 
+@using (Html.BeginForm("PostData", "Home", FormMethod.Post))
+{
+    @(Html.Grid(Model.Items)
+    .RenderUsing(new PostAsListRenderer<ItemModel>("list"))
+    .Columns(c =>
+    {
+        c.Custom(
+            @<text>
+                 @Html.HiddenFor(x => item.Id), item.Id)
+                 @item.Id
+             </text>
+        ).Named("Id");
+        c.For(x => Html.TextBoxFor(y => x.Name)).Named("Name");
+        c.For(x => Html.TextBoxFor(y => x.Description)).Named("Description");
+        c.For(x => Html.DropDownListFor(y => x.SelectedItem, Model.SelectListItems)).Named("DropDown");
+        c.For(x => Html.NameFor(y => x.Name));
+    }))
+    
+    <input type="submit" value="submit" />
+}
+
+@Html.TextBoxFor(x => x.Test)

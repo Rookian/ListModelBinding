@@ -42,9 +42,6 @@ C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.Opt
 C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.WebPages.dll
 C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.WebPages.Razor.dll
 C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Net.Http.Formatting.dll
-C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\Newtonsoft.Json.dll
-C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\WebGrease.dll
-C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\Antlr3.Runtime.dll
 C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\EntityFramework.xml
 C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Net.Http.xml
 C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.Http.xml
@@ -53,4 +50,3 @@ C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.Mvc
 C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.WebPages.xml
 C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Web.WebPages.Razor.xml
 C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\System.Net.Http.Formatting.xml
-C:\Development\ListModelBinding\ListModelBinding\bin\AutoTest.Net\Newtonsoft.Json.xml

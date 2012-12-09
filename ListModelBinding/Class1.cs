@@ -19,9 +19,9 @@ namespace ListModelBinding
 
         public static string GetExpressionText(LambdaExpression expression)
         {
-            System.Runtime.CompilerServices.StrongBox<string>.
+
             // Split apart the expression string for property/field accessors to create its name
-            Stack<string> nameParts = new Stack<string>();
+            var nameParts = new Stack<string>();
             Expression part = expression.Body;
 
             while (part != null)

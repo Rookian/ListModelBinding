@@ -4,9 +4,12 @@
         <meta charset="utf-8" />
         <title>@ViewBag.Title - My ASP.NET MVC Application</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="~/Content/Site.css"/>
         <meta name="viewport" content="width=device-width" />
-        @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")
+        <script type="text/javascript" src="~/Scripts/jquery-1.8.3.js"></script>
+        <script type="text/javascript" src="~/Scripts/jquery.validate.js"></script>
+        <script type="text/javascript" src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+        <script type="text/javascript" src="~/Scripts/Core.js"></script>
     </head>
     <body>
 
@@ -23,8 +26,5 @@
                 </div>
             </div>
         </footer>
-
-        @Scripts.Render("~/bundles/jquery")
-        @RenderSection("scripts", required: false)
     </body>
 </html>

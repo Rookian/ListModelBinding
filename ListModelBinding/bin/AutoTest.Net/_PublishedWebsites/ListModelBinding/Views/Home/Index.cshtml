@@ -1,42 +1,66 @@
-﻿@model ListModelBinding.Models.ViewModel
+﻿@model ViewModel
 @using ListModelBinding
+@using ListModelBinding.Models
 @using MvcContrib.UI.Grid
 
-@{
-    ViewBag.Title = "Home Page";
-}
-@section featured {
-    <section class="featured">
-        <div class="content-wrapper">
-            <hgroup class="title">
-                <h1>@ViewBag.Title.</h1>
-                <h2>@ViewBag.Message</h2>
-            </hgroup>
-            <p>
-                To learn more about ASP.NET MVC visit
-                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
-                If you have any questions about ASP.NET MVC visit
-                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
-            </p>
-        </div>
-    </section>
-}
-@using (Html.BeginForm("PostData", "Home", FormMethod.Post))
+@*@using (Html.BeginForm("PostData", "Home", FormMethod.Post))
 {
-    @(Html.Grid(Model.Items).Columns(c =>
+    @(Html.Grid(Model.Items)
+    .RenderUsing(new PostAsListRenderer<ItemModel>("list"))
+    .Columns(c =>
     {
         c.Custom(
             @<text>
-                @Html.UseListBinder().CreateListIndex(item.Id)
+                @Html.Hidden(Reflector.GetPropertyName(x => item.Id), item.Id)
                 @item.Id
-             </text>
-        ).Named("Id");
-        c.For(x => Html.UseListBinder().TextBoxFor(y => x.Name, x.Id)).Named("Name");
-        c.For(x => Html.UseListBinder().TextBoxFor(y => x.Description, x.Id)).Named("Description");
-        c.For(x => Html.UseListBinder().DropDownListFor(y => x.SelectedItem, x.Id, Model.SelectListItems)).Named("DropDown");
-      }))
+            </text>).Named("Id");
+        c.For(x => Html.TextBox(Reflector.GetPropertyName(y => x.Name), x.Name)).Named("Name");
+        c.For(x => Html.TextBox(Reflector.GetPropertyName(y => x.Description), x.Description)).Named("Description");
+        c.For(x => Html.DropDownList(Reflector.GetPropertyName(y => x.SelectedItem), Model.SelectListItems)).Named("DropDown");
+    }))
     
     <input type="submit" value="submit" />
 }
+
+@using (Html.BeginForm("PostData", "Home", FormMethod.Post))
+{
+    @(Html.Grid(Model.Items)
+          .RenderUsing(new PostAsListRenderer<ItemModel>("list"))
+          .Columns(c =>
+          {
+              c.Custom(
+                @<text>
+                        @Html.HiddenFor(x => item.Id)
+                       @item.Id
+                </text>).Named("Id");
+              c.For(x => Html.TextBoxFor(y => x.Name)).Named("Name");
+              c.For(x => Html.TextBoxFor(y => x.Description)).Named("Description");
+              c.For(x => Html.DropDownListFor(y => x.SelectedItem, Model.SelectListItems)).Named("DropDown");
+              c.For(x => Html.NameFor(y => x.Name));
+          }))
+
+    <input type="submit" value="submit" />
+}*@
+
+@using (Html.BeginForm("PostData", "Home", FormMethod.Post))
+{
+    @(Html.Grid(Model.Items)
+          .RenderUsing(new PostAsListRenderer<ItemModel>("list"))
+          .Columns(c =>
+          {
+              c.For(x => Html.Partial("Grid/Id", x)).Named("Id");
+              c.For(x => Html.Partial("Grid/Name", x)).Named("Name");
+              c.For(x => Html.Partial("Grid/Description", x)).Named("Description");
+              c.For(x => Html.Partial("Grid/SelectedItem", new ListModel { SelectedItem = x.SelectedItem, SelectListItems = Model.SelectListItems })).Named("DropDown");
+          }))
+
+    <input type="submit" value="submit" />
+}
+
+@using (Html.BeginForm("PostSimple", "Home", FormMethod.Post, new {id = "simpleForm"}))
+{
+    @Html.TextBoxFor(x => x.Single.Name)  
+    <input type="submit" value="submit" id="btnSubmit" />
+}
+
 

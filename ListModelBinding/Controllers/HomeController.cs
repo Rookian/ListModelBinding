@@ -8,8 +8,6 @@ namespace ListModelBinding.Controllers
     {
         public ActionResult Index()
         {
-
-            
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
             var viewModel = new ViewModel
             {
@@ -26,12 +24,21 @@ namespace ListModelBinding.Controllers
                     new ItemModel {Id = 3, Description = "bla3", Name = "Name3"}
                 }
             };
+
             return View(viewModel);
         }
 
         [HttpPost]
         public ActionResult PostData(List<ItemModel> list)
-        {            
+        {
+            bool isValid = ModelState.IsValid;
+            return new EmptyResult();
+        }
+
+        public ActionResult PostSimple(Single single)
+        {
+            bool isValid = ModelState.IsValid;
+            bool isAjaxRequest = Request.IsAjaxRequest();
             return new EmptyResult();
         }
     }

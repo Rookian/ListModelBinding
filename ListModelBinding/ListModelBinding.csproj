@@ -199,6 +199,7 @@
     <Content Include="Views\Home\Grid\Description.cshtml" />
     <Content Include="Views\Home\Grid\SelectedItem.cshtml" />
     <Content Include="Views\Home\Grid\Id.cshtml" />
+    <Content Include="Views\Home\Grid\test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

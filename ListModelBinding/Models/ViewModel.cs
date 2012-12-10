@@ -15,6 +15,7 @@ namespace ListModelBinding.Models
     public class ListModel
     {
         public List<SelectListItem> SelectListItems { get; set; }
+        [Required]
         public string SelectedItem { get; set; }
     }
 
@@ -22,12 +23,12 @@ namespace ListModelBinding.Models
     {
         public int Id { get; set; }
         
-        [Required]
         public string SelectedItem { get; set; }
 
         [Required]
         public string Name { get; set; }
 
+        [Required]
         public string Description { get; set; }
     }
 
